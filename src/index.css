@@ -1,74 +1,77 @@
-/* 1. Global Reset: Removes default browser margins so we start clean */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* 2. Base Page Setup: Sets the background color and a clean, modern font */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #0f172a; /* Deep slate tech background */
+  color: #f8fafc;
   line-height: 1.6;
 }
 
-/* 3. Center the Website: Prevents text from stretching across massive monitors */
 #root {
-  max-width: 800px; 
-  margin: 0 auto;   /* This automatically centers the page */
+  max-width: 900px;
+  margin: 0 auto;
   padding: 60px 20px;
 }
 
-/* 4. Section Spacing: Adds breathing room between Hero, Projects, and Skills */
 section {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease forwards; /* Smooth entrance animation */
 }
 
-/* 5. Typography (Fonts): Makes headers bold and professional */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 h1 {
   font-size: 3rem;
-  color: #1a1a1a;
-  margin-bottom: 5px;
+  color: #ffffff;
+  font-weight: 800;
 }
 
 h2 {
   font-size: 1.8rem;
-  color: #2c3e50;
+  color: #38bdf8; /* Vibrant tech blue */
   margin-bottom: 20px;
-  border-bottom: 3px solid #3498db; /* Adds a nice blue underline */
+  border-bottom: 2px solid #1e293b;
   padding-bottom: 10px;
 }
 
 h3 {
   font-size: 1.3rem;
-  color: #3498db;
+  color: #e2e8f0;
   margin-bottom: 10px;
 }
 
-/* 6. Project Cards: Turns the plain divs into floating white cards with shadows */
-section > div {
-  background: white;
+p {
+  color: #94a3b8;
+}
+
+/* Professional Cards with Hover Glow */
+section > div, ul > li {
+  background: #1e293b;
   padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   margin-bottom: 20px;
-  transition: transform 0.2s ease; /* Prepares it for hover animations */
+  border: 1px solid #334155;
+  transition: all 0.3s ease;
 }
 
-section > div:hover {
-  transform: translateY(-5px); /* Makes the card float up slightly when hovered */
+section > div:hover, ul > li:hover {
+  transform: translateY(-5px);
+  border-color: #38bdf8;
+  box-shadow: 0 8px 30px rgba(56, 189, 248, 0.15);
 }
 
-/* 7. Skills List: Removes ugly bullet points and turns them into clean rows */
 ul {
-  list-style: none; 
-}
-
-li {
-  background: white;
-  margin-bottom: 10px;
-  padding: 15px 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  list-style: none;
 }
