@@ -9,12 +9,12 @@ function About() {
       
       <div className="grid-2" style={{ alignItems: 'start' }}>
         <p style={{ fontSize: '1.1rem', color: '#333', lineHeight: '1.8' }}>
-          I recently completed my Master of Computer Applications (MCA) at Sree Narayana Gurukulam College of Engineering (SNGCE). I care about clean code, functional AI applications, and building software that actually solves practical problems.
+          Recent MCA graduate who enjoys building backend and full-stack web applications, and I'm always curious about why a system works the way it does — not just getting it to work. I try to stay honest about what I know well and what I'm still figuring out.
         </p>
         <ul className="square-list">
-          <li>Based in Palakkad, Kerala · Open to software roles</li>
-          <li>Focused on AI, software engineering, and smart systems</li>
-          <li>Available for full-time entry-level opportunities</li>
+          <li>📍 Based in Palakkad, Kerala</li>
+          <li>🧩 Enjoys problem-solving, not just task-checking</li>
+          <li>🌱 Early in my career, and genuinely enjoying the learning curve</li>
         </ul>
       </div>
     </section>
