@@ -46,6 +46,7 @@ function Projects() {
           <p style={{ fontSize: '0.95rem', marginBottom: '10px' }}>Built with a focus on database integrity and query efficiency.</p>
           <ul className="square-list" style={{ fontSize: '0.9rem' }}>
             <li>Independently debugged logic errors using a methodical, root-cause approach</li>
+            <li>Implemented secure session handling and data validation workflows to protect user transactions</li>
           </ul>
         </div>
       </div>

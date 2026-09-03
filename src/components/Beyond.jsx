@@ -7,18 +7,22 @@ function Beyond() {
       <div className="section-tracker">BEYOND THE DESK</div>
       <h2 className="main-heading">What else drives me.</h2>
 
+      <p style={{ fontSize: '1.05rem', color: '#333', marginBottom: '25px', lineHeight: '1.7' }}>
+        Beyond the desk, the pursuit of new perspectives and creative expression keeps my approach to work balanced and grounded.
+      </p>
+
       <div className="grid-3">
         <div className="editorial-card">
-          <h3>Continuous Learning</h3>
-          <p>Exploring new tech trends, AI advancements, and developer platforms to stay sharp.</p>
+          <h3>Video Editing &amp; Content Creation</h3>
+          <p>Shaping raw footage and framing stories into vlogs sharpens my sense of pacing, visual rhythm, and audience engagement, which translates naturally into how I structure digital projects.</p>
         </div>
         <div className="editorial-card">
-          <h3>Structured Writing</h3>
-          <p>Translating complex technical concepts into clear articles and seminar presentations.</p>
+          <h3>Event Management &amp; Anchoring</h3>
+          <p>Orchestrating live events and anchoring on stage helps build real-time adaptability, clear communication, and composure under pressure, supporting how I collaborate with teams and manage group workflows.</p>
         </div>
         <div className="editorial-card">
-          <h3>Travel &amp; Exploration</h3>
-          <p>Regular train travel across locations, expanding perspective and adaptability in new environments.</p>
+          <h3>Language Acquisition</h3>
+          <p>Exploring new languages encourages continuous learning and adaptability, helping me approach complex problem-solving from different angles.</p>
         </div>
       </div>
 
@@ -28,4 +32,5 @@ function Beyond() {
     </section>
   )
 }
+
 export default Beyond
