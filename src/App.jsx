@@ -1,7 +1,11 @@
+import Hero from './components/Hero'
+import Projects from './components/Projects'
+
 function App() {
   return (
     <div>
-      <h1>Sreethika's Portfolio</h1>
+      <Hero />
+      <Projects />
     </div>
   )
 }
