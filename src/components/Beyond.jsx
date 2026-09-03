@@ -27,7 +27,7 @@ function Beyond() {
       </div>
 
       <div className="quote-bar" style={{ marginTop: '30px', textAlign: 'center' }}>
-        &ldquo;Curiosity is the engine of technological achievement.&rdquo;
+        &ldquo;Learn to understand, create to connect.&rdquo;
       </div>
     </section>
   )
