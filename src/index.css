@@ -1,0 +1,74 @@
+/* 1. Global Reset: Removes default browser margins so we start clean */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Base Page Setup: Sets the background color and a clean, modern font */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 3. Center the Website: Prevents text from stretching across massive monitors */
+#root {
+  max-width: 800px; 
+  margin: 0 auto;   /* This automatically centers the page */
+  padding: 60px 20px;
+}
+
+/* 4. Section Spacing: Adds breathing room between Hero, Projects, and Skills */
+section {
+  margin-bottom: 60px;
+}
+
+/* 5. Typography (Fonts): Makes headers bold and professional */
+h1 {
+  font-size: 3rem;
+  color: #1a1a1a;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #3498db; /* Adds a nice blue underline */
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.3rem;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+/* 6. Project Cards: Turns the plain divs into floating white cards with shadows */
+section > div {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  transition: transform 0.2s ease; /* Prepares it for hover animations */
+}
+
+section > div:hover {
+  transform: translateY(-5px); /* Makes the card float up slightly when hovered */
+}
+
+/* 7. Skills List: Removes ugly bullet points and turns them into clean rows */
+ul {
+  list-style: none; 
+}
+
+li {
+  background: white;
+  margin-bottom: 10px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
