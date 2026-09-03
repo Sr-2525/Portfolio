@@ -41,7 +41,7 @@ function Skills() {
           <ul className="square-list">
             <li>Agile/Scrum and sprint-based delivery</li>
             <li>Software Testing &amp; Debugging, Database Design, Technical Documentation, RBAC</li>
-            <li><strong>Growth:</strong> Continuously exploring emerging AI tools and software engineering trends.</li>
+            <li>Continuously exploring emerging AI tools and software engineering trends.</li>
           </ul>
         </div>
       </div>
