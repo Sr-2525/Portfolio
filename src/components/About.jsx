@@ -9,12 +9,12 @@ function About() {
       
       <div className="grid-2" style={{ alignItems: 'start' }}>
         <p style={{ fontSize: '1.1rem', color: '#333', lineHeight: '1.8' }}>
-          Recent MCA graduate who enjoys building backend and full-stack web applications, and I'm always curious about why a system works the way it does — not just getting it to work. I try to stay honest about what I know well and what I'm still figuring out.
+          I'm an aspiring software engineer based in Palakkad, fresh out of my MCA. I've spent my academic and project time building backend and full-stack web applications, and I care deeply about understanding why a system works the way it does, not just getting it to run. I work best when I have a clear problem to solve and space to learn as I go.
         </p>
         <ul className="square-list">
-          <li>📍 Based in Palakkad, Kerala</li>
-          <li>🧩 Enjoys problem-solving, not just task-checking</li>
-          <li>🌱 Early in my career, and genuinely enjoying the learning curve</li>
+          <li>📍 Based in Palakkad — open to relocating</li>
+          <li>🎓 2026 MCA graduate, ready to start my career</li>
+          <li>💼 Available for full-time entry-level roles</li>
         </ul>
       </div>
     </section>
