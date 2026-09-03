@@ -5,7 +5,6 @@ import Skills from './components/Skills'
 import Strengths from './components/Strengths'
 import Projects from './components/Projects'
 import Achievements from './components/Achievements'
-import Approach from './components/Approach'
 import Beyond from './components/Beyond'
 import Goals from './components/Goals'
 import Contact from './components/Contact'
@@ -20,7 +19,6 @@ function App() {
       <Strengths />
       <Projects />
       <Achievements />
-      <Approach />
       <Beyond />
       <Goals />
       <Contact />
