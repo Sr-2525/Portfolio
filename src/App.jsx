@@ -4,6 +4,7 @@ import Journey from './components/Journey'
 import Skills from './components/Skills'
 import Strengths from './components/Strengths'
 import Projects from './components/Projects'
+import Achievements from './components/Achievements'
 import Approach from './components/Approach'
 import Beyond from './components/Beyond'
 import Goals from './components/Goals'
@@ -18,6 +19,7 @@ function App() {
       <Skills />
       <Strengths />
       <Projects />
+      <Achievements />
       <Approach />
       <Beyond />
       <Goals />
