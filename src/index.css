@@ -346,3 +346,18 @@ h3 {
 .slide-section .grid-3 .editorial-card h3 {
   color: #D96B27 !important;
 }
+
+/* Remove shadow specifically from Strengths card headings */
+.slide-section .grid-3 .editorial-card h3 {
+  text-shadow: none !important;
+}
+
+/* Update What's Next section headings and key statements to burnt orange without shadow */
+.slide-section h2:not(.main-heading),
+.slide-section h3,
+.slide-section .editorial-card h3,
+.slide-section p strong,
+.slide-section .highlight-target {
+  color: #D96B27 !important;
+  text-shadow: none !important;
+}
