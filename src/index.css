@@ -9,17 +9,28 @@
 body {
   font-family: 'Inter', sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
   background-color: #1E1A20 !important;
-  color: #F8F5F8 !important;
-  line-height: 1.6;
+  color: #E8DFEC !important; /* Elegant warm rose-cream body text */
+  line-height: 1.7;
 }
 
-p, span, li, a {
-  color: #F2ECF5 !important;
+/* Vibrant High-Contrast Editorial Highlights */
+strong, b, .highlight-term {
+  color: #FFD166 !important; /* Rich golden-champagne contrast pop */
+  font-weight: 600;
+}
+
+em, .highlight-sub {
+  color: #EED7FF !important; /* Luminous pale lavender */
+}
+
+p, li, a {
+  color: #E8DFEC !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', Georgia, serif;
-  color: #FFFFFF !important;
+  color: #FFFFFF !important; /* Stark crisp white for maximum header contrast */
+  letter-spacing: -0.01em;
 }
 
 .portfolio-container {
@@ -83,15 +94,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-item:hover {
-  color: #E6CBEF !important;
+  color: #FFD166 !important;
   background: #312938;
 }
 
 .nav-item.active {
-  color: #E6CBEF !important;
+  color: #FFD166 !important;
   font-weight: 600;
   background: #312938;
-  border-left: 3px solid #C49ED0;
+  border-left: 3px solid #FFD166;
 }
 
 .sidebar-footer {
@@ -118,10 +129,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-tracker {
   font-size: 0.75rem;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #D8B5E3 !important;
-  font-weight: 600;
+  color: #EED7FF !important; /* Luminous lavender tracking */
+  font-weight: 700;
   margin-bottom: 12px;
 }
 
@@ -132,7 +143,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-/* Cover Slide Styling - Explicit Grid Restored */
+/* Cover Slide Layout */
 .cover-slide {
   background: #28212E !important;
   border: 1px solid #43394B !important;
@@ -147,9 +158,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .cover-left .top-tag {
   font-size: 0.8rem;
-  font-weight: 600;
-  color: #D8B5E3 !important;
-  letter-spacing: 0.15em;
+  font-weight: 700;
+  color: #EED7FF !important;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   margin-bottom: 16px;
   display: block;
@@ -164,14 +175,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .cover-left .subtitle {
   font-size: 1.1rem;
-  color: #F0E6F4 !important;
+  color: #F8F5F8 !important;
   margin-bottom: 12px;
   font-weight: 500;
 }
 
 .cover-left .tagline {
   font-size: 0.95rem;
-  color: #E2DCE8 !important;
+  color: #E8DFEC !important;
   font-style: italic;
 }
 
@@ -208,7 +219,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .editorial-card h3 {
   font-size: 1.25rem;
-  color: #E6CBEF !important;
+  color: #FFFFFF !important;
   margin-bottom: 12px;
 }
 
@@ -222,7 +233,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 20px;
   margin-bottom: 12px;
   font-size: 1.05rem;
-  color: #F2ECF5 !important;
+  color: #E8DFEC !important;
 }
 
 .square-list li::before {
@@ -232,7 +243,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 8px;
   width: 8px;
   height: 8px;
-  background-color: #D8B5E3 !important;
+  background-color: #FFD166 !important; /* Golden-champagne bullet contrast */
 }
 
 .timeline-item {
@@ -251,17 +262,17 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #D8B5E3 !important;
+  color: #FFD166 !important; /* Golden year contrast */
 }
 
 .quote-bar {
   background: #312838 !important;
-  border-left: 4px solid #D8B5E3 !important;
+  border-left: 4px solid #FFD166 !important;
   padding: 20px 25px;
   font-family: 'Playfair Display', serif;
   font-size: 1.15rem;
   font-style: italic;
-  color: #F8F5F8 !important;
+  color: #FFFFFF !important;
   margin-bottom: 30px;
 }
 
