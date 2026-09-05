@@ -369,3 +369,39 @@ h3 {
   color: #D96B27 !important;
   text-shadow: none !important;
 }
+
+/* Force Contact Page Right Box to Match Left Content Height */
+.slide-section .grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch !important;
+}
+
+.slide-section .grid-2 > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.slide-section .grid-2 .cover-right-box {
+  height: 100% !important;
+  min-height: 100% !important;
+  flex: 1;
+}
+
+.slide-section .grid-2 .cover-right-box img {
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+/* Force Contact Image Container to Reduced Size */
+.slide-section .grid-2 .cover-right-box {
+  height: 280px !important;
+  max-height: 280px !important;
+}
+
+/* Force Contact overlay text and heading to pure white */
+.slide-section .cover-right-box div[style*="position: absolute"] h3,
+.slide-section .cover-right-box div[style*="position: absolute"] p,
+.slide-section .cover-right-box div[style*="position: absolute"] span {
+  color: #FFFFFF !important;
+}
