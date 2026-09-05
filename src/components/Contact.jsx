@@ -23,12 +23,25 @@ function Contact() {
           </ul>
         </div>
 
-        <div className="cover-right-box" style={{ padding: '0', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', height: '320px' }}>
+        {/* Right-Side Image Panel with Text Overlay */}
+        <div className="cover-right-box" style={{ padding: '0', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', height: '320px', position: 'relative' }}>
           <img 
             src={contactImg} 
-            alt="Contact Visual" 
+            alt="" /* Alt removed as image is decorative/background for text */
             style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} 
           />
+          {/* Text Overlay */}
+          <div style={{ position: 'absolute', inset: '0', background: 'rgba(0, 0, 0, 0.3)', padding: '40px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', color: '#FFFFFF' }}>
+            <span style={{ fontSize: '0.75rem', letterSpacing: '0.15em', textTransform: 'uppercase', display: 'block', marginBottom: '12px', opacity: '0.9', fontWeight: '500' }}>
+              THE BEST COLLABORATIONS
+            </span>
+            <h3 style={{ color: '#FFFFFF', fontSize: '1.5rem', marginBottom: '20px', fontFamily: "'Playfair Display', serif", lineHeight: '1.3', fontWeight: '600' }}>
+              Start with a conversation.
+            </h3>
+            <p style={{ color: '#FFFFFF', fontSize: '0.95rem', fontStyle: 'italic', lineHeight: '1.5', fontWeight: '400' }}>
+              &ldquo;I look forward to hearing from you.&rdquo;
+            </p>
+          </div>
         </div>
       </div>
     </section>
