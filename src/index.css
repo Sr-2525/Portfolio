@@ -323,3 +323,14 @@ h3 {
   color: #F8F5F8 !important; /* Crisp white / rose-cream for card and sub-titles */
   letter-spacing: -0.01em;
 }
+
+/* Updated Hero Cover Specific Colors & Shadows */
+.cover-slide .cover-left h1 {
+  color: #C084FC !important; /* Bright purple */
+  text-shadow: 0 2px 10px rgba(192, 132, 252, 0.4) !important; /* Soft luminous light shadow */
+}
+
+.cover-slide .cover-left .tagline {
+  color: #E8DCC4 !important; /* Dark cream */
+  font-style: italic !important;
+}
