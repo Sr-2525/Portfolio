@@ -13,13 +13,20 @@ const navItems = [
 ]
 
 function SidebarNav() {
-  const [activeId, setActiveId] = useState('about')
+  const [activeId, setActiveId] = useState(null)
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = navItems.map(item => document.getElementById(item.id))
-      const scrollPosition = window.scrollY + 200
+      const aboutSection = document.getElementById('about')
+      const scrollPosition = window.scrollY + 300
 
+      // If we haven't scrolled down to the 'about' section yet, clear the active nav state
+      if (aboutSection && scrollPosition < aboutSection.offsetTop) {
+        setActiveId(null)
+        return
+      }
+
+      const sections = navItems.map(item => document.getElementById(item.id))
       for (let i = sections.length - 1; i >= 0; i--) {
         const section = sections[i]
         if (section && section.offsetTop <= scrollPosition) {
