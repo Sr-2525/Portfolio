@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 
 const navItems = [
-  { id: 'hero', label: 'Cover' },
   { id: 'about', label: 'Who I Am' },
   { id: 'journey', label: 'My Journey' },
   { id: 'skills', label: 'My Skill Set' },
@@ -14,7 +13,7 @@ const navItems = [
 ]
 
 function SidebarNav() {
-  const [activeId, setActiveId] = useState('hero')
+  const [activeId, setActiveId] = useState('about')
 
   useEffect(() => {
     const handleScroll = () => {
