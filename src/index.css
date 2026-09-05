@@ -304,3 +304,22 @@ h1, h2, h3, h4, h5, h6 {
     gap: 5px;
   }
 }
+
+/* Distinct Colors for Heading Levels */
+h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: #FFD166 !important; /* Golden-champagne for main titles */
+  letter-spacing: -0.01em;
+}
+
+h2, .main-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: #EED7FF !important; /* Luminous pale lavender for section headers */
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: #F8F5F8 !important; /* Crisp white / rose-cream for card and sub-titles */
+  letter-spacing: -0.01em;
+}
