@@ -8,12 +8,20 @@
 
 body {
   font-family: 'Inter', sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
-  background-color: #F9F6F0; /* Warm editorial cream */
-  color: #1A1A1A; /* Near black */
+  background-color: #1E1A20 !important;
+  color: #F8F5F8 !important;
   line-height: 1.6;
 }
 
-/* Two-column Portfolio Shell */
+p, span, li, a {
+  color: #F2ECF5 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: #FFFFFF !important;
+}
+
 .portfolio-container {
   display: grid;
   grid-template-columns: 280px 1fr;
@@ -24,7 +32,6 @@ body {
   align-items: start;
 }
 
-/* Sticky Left Navigation Panel */
 .portfolio-sidebar {
   position: sticky;
   top: 40px;
@@ -32,22 +39,23 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-right: 1px solid #E2DCD2;
+  border-right: 1px solid #43394B;
   padding-right: 30px;
+  background-color: transparent;
 }
 
 .sidebar-header h2 {
-  font-family: 'Playfair Display', Georgia, serif;
   font-size: 1.5rem;
-  color: #1A1A1A;
+  color: #FFFFFF !important;
   margin-bottom: 4px;
 }
 
 .sidebar-header p {
   font-size: 0.8rem;
-  color: #666;
+  color: #D2C2DC !important;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  font-weight: 500;
 }
 
 .sidebar-nav {
@@ -66,7 +74,7 @@ body {
   text-align: left;
   font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
-  color: #666;
+  color: #D2C2DC !important;
   cursor: pointer;
   padding: 6px 10px;
   border-radius: 4px;
@@ -75,79 +83,72 @@ body {
 }
 
 .nav-item:hover {
-  color: #A62B12;
-  background: #F4EFE6;
+  color: #E6CBEF !important;
+  background: #312938;
 }
 
 .nav-item.active {
-  color: #A62B12;
+  color: #E6CBEF !important;
   font-weight: 600;
-  background: #F4EFE6;
-  border-left: 3px solid #A62B12;
+  background: #312938;
+  border-left: 3px solid #C49ED0;
 }
 
 .sidebar-footer {
   font-size: 0.75rem;
-  color: #888;
-  border-top: 1px solid #E2DCD2;
+  color: #D2C2DC !important;
+  border-top: 1px solid #43394B;
   padding-top: 15px;
   letter-spacing: 0.05em;
 }
 
-/* Main Content Column */
 .portfolio-content {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-/* Editorial Typography */
-h1, h2, h3 {
-  font-family: 'Playfair Display', Georgia, serif;
-}
-
-/* Section Slide Layout */
 .slide-section {
-  background: #FFFFFF;
-  border: 1px solid #E2DCD2;
+  background: #28212E !important;
+  border: 1px solid #43394B !important;
   border-radius: 4px;
   padding: 50px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 10px 30px rgba(15, 12, 17, 0.5);
 }
 
 .section-tracker {
   font-size: 0.75rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #A62B12; /* Rich Crimson accent */
+  color: #D8B5E3 !important;
   font-weight: 600;
   margin-bottom: 12px;
 }
 
 .main-heading {
   font-size: 2.5rem;
-  color: #1A1A1A;
+  color: #FFFFFF !important;
   margin-bottom: 24px;
   font-weight: 700;
 }
 
-/* Cover Slide Styling */
+/* Cover Slide Styling - Explicit Grid Restored */
 .cover-slide {
-  background: #FFFFFF;
-  border: 1px solid #E2DCD2;
+  background: #28212E !important;
+  border: 1px solid #43394B !important;
   border-radius: 4px;
   padding: 70px 60px;
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   gap: 40px;
   align-items: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 10px 30px rgba(15, 12, 17, 0.5);
 }
 
 .cover-left .top-tag {
   font-size: 0.8rem;
   font-weight: 600;
-  color: #A62B12;
+  color: #D8B5E3 !important;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   margin-bottom: 16px;
@@ -158,47 +159,34 @@ h1, h2, h3 {
   font-size: 3.8rem;
   line-height: 1.1;
   margin-bottom: 20px;
-  color: #1A1A1A;
+  color: #FFFFFF !important;
 }
 
 .cover-left .subtitle {
   font-size: 1.1rem;
-  color: #4A4A4A;
+  color: #F0E6F4 !important;
   margin-bottom: 12px;
   font-weight: 500;
 }
 
 .cover-left .tagline {
   font-size: 0.95rem;
-  color: #777;
+  color: #E2DCE8 !important;
   font-style: italic;
 }
 
 .cover-right-box {
-  background: #A62B12;
-  color: #F9F6F0;
+  background: #332B3A !important;
+  border: 1px solid #554860 !important;
   height: 380px;
   border-radius: 2px;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 !important;
 }
 
-.cover-right-box span {
-  font-size: 0.8rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  opacity: 0.8;
-  margin-bottom: 8px;
-}
-
-.cover-right-box h3 {
-  font-size: 1.8rem;
-  font-family: 'Playfair Display', serif;
-}
-
-/* Two Column & Grid Layouts */
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -212,19 +200,18 @@ h1, h2, h3 {
 }
 
 .editorial-card {
-  background: #FDFBFA;
-  border: 1px solid #E8E2D8;
+  background: #332B3A !important;
+  border: 1px solid #554860 !important;
   padding: 30px;
   border-radius: 2px;
 }
 
 .editorial-card h3 {
   font-size: 1.25rem;
-  color: #A62B12;
+  color: #E6CBEF !important;
   margin-bottom: 12px;
 }
 
-/* Custom Square Bullets */
 .square-list {
   list-style: none;
   margin-top: 20px;
@@ -235,7 +222,7 @@ h1, h2, h3 {
   padding-left: 20px;
   margin-bottom: 12px;
   font-size: 1.05rem;
-  color: #333;
+  color: #F2ECF5 !important;
 }
 
 .square-list li::before {
@@ -245,16 +232,15 @@ h1, h2, h3 {
   top: 8px;
   width: 8px;
   height: 8px;
-  background-color: #A62B12;
+  background-color: #D8B5E3 !important;
 }
 
-/* Timeline Styling */
 .timeline-item {
   display: grid;
   grid-template-columns: 140px 1fr;
   gap: 30px;
   padding: 24px 0;
-  border-bottom: 1px solid #E8E2D8;
+  border-bottom: 1px solid #554860;
 }
 
 .timeline-item:last-child {
@@ -265,24 +251,17 @@ h1, h2, h3 {
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #A62B12;
+  color: #D8B5E3 !important;
 }
 
-.timeline-content h3 {
-  font-size: 1.2rem;
-  margin-bottom: 6px;
-  color: #1A1A1A;
-}
-
-/* Quote Bar */
 .quote-bar {
-  background: #F4EFE6;
-  border-left: 4px solid #A62B12;
+  background: #312838 !important;
+  border-left: 4px solid #D8B5E3 !important;
   padding: 20px 25px;
   font-family: 'Playfair Display', serif;
   font-size: 1.15rem;
   font-style: italic;
-  color: #2C2C2C;
+  color: #F8F5F8 !important;
   margin-bottom: 30px;
 }
 
@@ -295,7 +274,7 @@ h1, h2, h3 {
     position: relative;
     height: auto;
     border-right: none;
-    border-bottom: 1px solid #E2DCD2;
+    border-bottom: 1px solid #43394B;
     padding-bottom: 20px;
     margin-bottom: 20px;
   }

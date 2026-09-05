@@ -3,6 +3,7 @@ import heroImg from '../assets/hero.jpeg'
 function Hero() {
   return (
     <div className="cover-slide">
+      {/* Left Column: Text */}
       <div className="cover-left">
         <span className="top-tag">PORTFOLIO 2026</span>
         <h1>Hello, I'm<br />Sreethika.</h1>
@@ -10,7 +11,8 @@ function Hero() {
         <p className="tagline">Curious about how code meets real-world utility. Building practical software and exploring AI systems without the buzzwords.</p>
       </div>
       
-      <div className="cover-right-box" style={{ padding: '0', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#E2DCD2' }}>
+      {/* Right Column: Image */}
+      <div className="cover-right-box" style={{ padding: '0', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <img 
           src={heroImg} 
           alt="Sreethika Radhakrishnan" 
