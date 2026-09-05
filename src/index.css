@@ -361,3 +361,11 @@ h3 {
   color: #D96B27 !important;
   text-shadow: none !important;
 }
+
+/* Force What's Next statement to burnt orange and remove shadow */
+.slide-section p[style*="font-style: italic"],
+.slide-section p[style*="fontWeight: '600'"],
+.slide-section p[style*="font-weight: 600"] {
+  color: #D96B27 !important;
+  text-shadow: none !important;
+}
