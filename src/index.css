@@ -9,38 +9,41 @@
 body {
   font-family: 'Inter', sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
   background-color: #1E1A20 !important;
-  color: #E8DFEC !important; /* Elegant warm rose-cream body text */
+  color: #E8DFEC !important;
   line-height: 1.7;
+  overflow-x: hidden;
 }
 
 /* Vibrant High-Contrast Editorial Highlights */
 strong, b, .highlight-term {
-  color: #FFD166 !important; /* Rich golden-champagne contrast pop */
+  color: #FFD166 !important;
   font-weight: 600;
 }
 
 em, .highlight-sub {
-  color: #EED7FF !important; /* Luminous pale lavender */
+  color: #EED7FF !important;
 }
 
 p, li, a {
   color: #E8DFEC !important;
+  word-break: break-word;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', Georgia, serif;
-  color: #FFFFFF !important; /* Stark crisp white for maximum header contrast */
+  color: #FFFFFF !important;
   letter-spacing: -0.01em;
 }
 
 .portfolio-container {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 280px minmax(0, 1fr);
   max-width: 1500px;
   margin: 0 auto;
   padding: 40px;
   gap: 50px;
   align-items: start;
+  width: 100%;
 }
 
 .portfolio-sidebar {
@@ -72,8 +75,8 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-nav {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin: 30px 0;
+  gap: 8px;
+  margin: 20px 0;
   overflow-y: auto;
   flex-grow: 1;
   padding-right: 5px;
@@ -87,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.9rem;
   color: #D2C2DC !important;
   cursor: pointer;
-  padding: 6px 10px;
+  padding: 8px 12px;
   border-radius: 4px;
   transition: all 0.2s ease;
   position: relative;
@@ -117,27 +120,29 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  min-width: 0; /* Prevents flex items from overflowing grid */
 }
 
 .slide-section {
   background: #28212E !important;
   border: 1px solid #43394B !important;
   border-radius: 4px;
-  padding: 50px;
+  padding: clamp(25px, 4vw, 50px);
   box-shadow: 0 10px 30px rgba(15, 12, 17, 0.5);
+  width: 100%;
 }
 
 .section-tracker {
   font-size: 0.75rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #EED7FF !important; /* Luminous lavender tracking */
+  color: #EED7FF !important;
   font-weight: 700;
   margin-bottom: 12px;
 }
 
 .main-heading {
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 3.5vw, 2.5rem);
   color: #FFFFFF !important;
   margin-bottom: 24px;
   font-weight: 700;
@@ -148,12 +153,13 @@ h1, h2, h3, h4, h5, h6 {
   background: #28212E !important;
   border: 1px solid #43394B !important;
   border-radius: 4px;
-  padding: 70px 60px;
+  padding: clamp(30px, 5vw, 70px);
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   gap: 40px;
   align-items: center;
   box-shadow: 0 10px 30px rgba(15, 12, 17, 0.5);
+  width: 100%;
 }
 
 .cover-left .top-tag {
@@ -167,7 +173,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cover-left h1 {
-  font-size: 3.8rem;
+  font-size: clamp(2.5rem, 5vw, 3.8rem);
   line-height: 1.1;
   margin-bottom: 20px;
   color: #FFFFFF !important;
@@ -196,25 +202,27 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   padding: 0 !important;
+  width: 100%;
 }
 
 .grid-2 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 30px;
 }
 
 .grid-3 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
 }
 
 .editorial-card {
   background: #332B3A !important;
   border: 1px solid #554860 !important;
-  padding: 30px;
+  padding: clamp(20px, 3vw, 30px);
   border-radius: 2px;
+  height: 100%;
 }
 
 .editorial-card h3 {
@@ -243,7 +251,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 8px;
   width: 8px;
   height: 8px;
-  background-color: #FFD166 !important; /* Golden-champagne bullet contrast */
+  background-color: #FFD166 !important;
 }
 
 .timeline-item {
@@ -262,7 +270,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #FFD166 !important; /* Golden year contrast */
+  color: #FFD166 !important;
 }
 
 .quote-bar {
@@ -276,83 +284,91 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 30px;
 }
 
+/* Tablet & Smaller Desktop Viewports (≤ 1024px) */
 @media (max-width: 1024px) {
   .portfolio-container {
     grid-template-columns: 1fr;
     padding: 20px;
+    gap: 30px;
   }
   .portfolio-sidebar {
     position: relative;
+    top: 0;
     height: auto;
     border-right: none;
     border-bottom: 1px solid #43394B;
     padding-bottom: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .sidebar-nav {
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 8px;
+    max-height: 180px;
+  }
+  .nav-item {
+    padding: 6px 10px;
+    font-size: 0.85rem;
   }
 }
 
-@media (max-width: 900px) {
+/* Mobile Devices (≤ 768px) */
+@media (max-width: 768px) {
   .cover-slide, .grid-2, .grid-3 {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
   .timeline-item {
     grid-template-columns: 1fr;
-    gap: 5px;
+    gap: 8px;
+  }
+  .cover-right-box {
+    height: 260px !important;
+  }
+  .slide-section {
+    padding: 20px;
   }
 }
 
-/* Distinct Colors for Heading Levels */
+/* Specific Accent Adjustments */
 h1 {
   font-family: 'Playfair Display', Georgia, serif;
-  color: #FFD166 !important; /* Golden-champagne for main titles */
+  color: #FFD166 !important;
   letter-spacing: -0.01em;
 }
 
 h2, .main-heading {
   font-family: 'Playfair Display', Georgia, serif;
-  color: #D4A373 !important; /* Rich warm chocolate brown */
+  color: #D4A373 !important;
   letter-spacing: -0.01em;
 }
 
 h3 {
   font-family: 'Playfair Display', Georgia, serif;
-  color: #F8F5F8 !important; /* Crisp white / rose-cream for card and sub-titles */
+  color: #F8F5F8 !important;
   letter-spacing: -0.01em;
 }
 
-/* Updated Hero Cover Specific Colors & Shadows */
 .cover-slide .cover-left h1 {
-  color: #C084FC !important; /* Bright purple */
-  text-shadow: 0 2px 10px rgba(192, 132, 252, 0.4) !important; /* Soft luminous light shadow */
+  color: #C084FC !important;
+  text-shadow: 0 2px 10px rgba(192, 132, 252, 0.4) !important;
 }
 
 .cover-slide .cover-left .tagline {
-  color: #E8DCC4 !important; /* Dark cream */
+  color: #E8DCC4 !important;
   font-style: italic !important;
 }
 
-/* Add luminous bright shadow to section headings like 'A little bout me' */
 .slide-section h2, 
 .slide-section h3,
 .slide-section .main-heading {
   text-shadow: 0 2px 10px rgba(192, 132, 252, 0.4) !important;
 }
 
-/* Force Strengths Card Headings to Burnt Orange */
 .slide-section .grid-3 .editorial-card h3 {
   color: #D96B27 !important;
-}
-
-/* Remove shadow specifically from Strengths card headings */
-.slide-section .grid-3 .editorial-card h3 {
   text-shadow: none !important;
 }
 
-/* Update What's Next section headings and key statements to burnt orange without shadow */
 .slide-section h2:not(.main-heading),
 .slide-section h3,
 .slide-section .editorial-card h3,
@@ -362,7 +378,6 @@ h3 {
   text-shadow: none !important;
 }
 
-/* Force What's Next statement to burnt orange and remove shadow */
 .slide-section p[style*="font-style: italic"],
 .slide-section p[style*="fontWeight: '600'"],
 .slide-section p[style*="font-weight: 600"] {
@@ -370,11 +385,16 @@ h3 {
   text-shadow: none !important;
 }
 
-/* Force Contact Page Right Box to Match Left Content Height */
 .slide-section .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: stretch !important;
+}
+
+@media (max-width: 768px) {
+  .slide-section .grid-2 {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 .slide-section .grid-2 > div {
@@ -383,23 +403,10 @@ h3 {
 }
 
 .slide-section .grid-2 .cover-right-box {
-  height: 100% !important;
-  min-height: 100% !important;
-  flex: 1;
-}
-
-.slide-section .grid-2 .cover-right-box img {
-  height: 100% !important;
-  object-fit: cover !important;
-}
-
-/* Force Contact Image Container to Reduced Size */
-.slide-section .grid-2 .cover-right-box {
   height: 280px !important;
   max-height: 280px !important;
 }
 
-/* Force Contact overlay text and heading to pure white */
 .slide-section .cover-right-box div[style*="position: absolute"] h3,
 .slide-section .cover-right-box div[style*="position: absolute"] p,
 .slide-section .cover-right-box div[style*="position: absolute"] span {

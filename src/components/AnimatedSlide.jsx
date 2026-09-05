@@ -1,43 +1,38 @@
 import { motion } from 'framer-motion'
 
-// Distinct, professional animation variants for different pages
 const animations = {
   fadeSlide: {
-    initial: { opacity: 0, y: 20 },
-    animate: { opacity: 1, y: 0 },
-    exit: { opacity: 0, y: -20 },
-    transition: { duration: 0.5, ease: 'easeOut' }
+    initial: { opacity: 0, y: 40 },
+    whileInView: { opacity: 1, y: 0 },
+    viewport: { once: false, amount: 0.3, margin: '0px 0px -100px 0px' }
   },
   scaleFade: {
-    initial: { opacity: 0, scale: 0.97 },
-    animate: { opacity: 1, scale: 1 },
-    exit: { opacity: 0, scale: 1.03 },
-    transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] }
+    initial: { opacity: 0, scale: 0.95 },
+    whileInView: { opacity: 1, scale: 1 },
+    viewport: { once: false, amount: 0.3, margin: '0px 0px -100px 0px' }
   },
   slideLeft: {
-    initial: { opacity: 0, x: -30 },
-    animate: { opacity: 1, x: 0 },
-    exit: { opacity: 0, x: 30 },
-    transition: { duration: 0.5, ease: 'easeInOut' }
+    initial: { opacity: 0, x: -50 },
+    whileInView: { opacity: 1, x: 0 },
+    viewport: { once: false, amount: 0.3, margin: '0px 0px -100px 0px' }
   },
   blurFade: {
     initial: { opacity: 0, filter: 'blur(8px)' },
-    animate: { opacity: 1, filter: 'blur(0px)' },
-    exit: { opacity: 0, filter: 'blur(8px)' },
-    transition: { duration: 0.6, ease: 'easeOut' }
+    whileInView: { opacity: 1, filter: 'blur(0px)' },
+    viewport: { once: false, amount: 0.3, margin: '0px 0px -100px 0px' }
   }
 }
 
 export default function AnimatedSlide({ children, variant = 'fadeSlide' }) {
-  const selectedAnimation = animations[variant] || animations.fadeSlide
+  const selected = animations[variant] || animations.fadeSlide
 
   return (
     <motion.div
-      initial={selectedAnimation.initial}
-      animate={selectedAnimation.animate}
-      exit={selectedAnimation.exit}
-      transition={selectedAnimation.transition}
-      style={{ width: '100%', height: '100%' }}
+      initial={selected.initial}
+      whileInView={selected.whileInView}
+      viewport={selected.viewport}
+      transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+      style={{ width: '100%', willChange: 'opacity, transform, filter', transform: 'translateZ(0)' }}
     >
       {children}
     </motion.div>

@@ -8,7 +8,7 @@ const navItems = [
   { id: 'projects', label: 'Recent Work' },
   { id: 'achievements', label: 'Achievements' },
   { id: 'beyond', label: 'Beyond the Desk' },
-  { id: 'goals', label: 'What I\'s Next' },
+  { id: 'goals', label: 'What\'s Next' },
   { id: 'contact', label: 'Let\'s Connect' },
 ]
 
