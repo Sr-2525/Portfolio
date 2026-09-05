@@ -13,15 +13,15 @@ function Strengths() {
 
       <div className="grid-3">
         <div className="editorial-card">
-          <h3>Analytical Problem-Solving &amp; Planning</h3>
+          <h3 style={{ color: '#D96B27' }}>Analytical Problem-Solving &amp; Planning</h3>
           <p>I like to take the time to deeply analyze complex problems, break them down into manageable pieces, and plan out my approach carefully. I believe in documenting my steps clearly so the logic is always transparent and easy to follow.</p>
         </div>
         <div className="editorial-card">
-          <h3>Detail-Oriented Execution</h3>
+          <h3 style={{ color: '#D96B27' }}>Detail-Oriented Execution</h3>
           <p>I focus on writing clean, reliable code with strong attention to detail. Whether it's database design or testing, I care about building systems that are efficient, maintainable, and robust.</p>
         </div>
         <div className="editorial-card">
-          <h3>Collaborative Team Player</h3>
+          <h3 style={{ color: '#D96B27' }}>Collaborative Team Player</h3>
           <p>I enjoy working across different teams and learning from others. By recognizing and appreciating each team member's strengths, I help keep communication respectful and workflows smooth to bring a project across the finish line.</p>
         </div>
       </div>

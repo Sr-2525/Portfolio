@@ -334,3 +334,15 @@ h3 {
   color: #E8DCC4 !important; /* Dark cream */
   font-style: italic !important;
 }
+
+/* Add luminous bright shadow to section headings like 'A little bout me' */
+.slide-section h2, 
+.slide-section h3,
+.slide-section .main-heading {
+  text-shadow: 0 2px 10px rgba(192, 132, 252, 0.4) !important;
+}
+
+/* Force Strengths Card Headings to Burnt Orange */
+.slide-section .grid-3 .editorial-card h3 {
+  color: #D96B27 !important;
+}
