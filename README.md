@@ -1,16 +1,80 @@
-# React + Vite
+# Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+High-performance, component-driven interactive developer portfolio built with React, Vite, Framer Motion, and Tailwind CSS to showcase technical architecture, professional milestones, and engineering projects with a polished editorial aesthetic.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Designed from scratch as a high-impact developer portfolio optimized for recruiters. It prioritizes what matters most—immediate project visibility, robust technical problem framing, and fluid navigation—shining a spotlight on full-stack systems like *SafePassage* and *Haritha Connect*.
 
-## React Compiler
+I architected the portfolio layout flow, engineered custom motion systems and responsive card designs, and configured complete CI/CD deployment pipelines.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Key Features
 
-## Expanding the ESLint configuration
+* **Prioritized Project Showcase:** Features top-tier engineering projects right at the top of the viewport to capture recruiter interest within the initial 7-second window.
+* **Architectural Problem Framing:** Every project card leads with a focused "Hard Problem" or "Core Challenge" callout highlighting deep technical decisions and system bottlenecks solved.
+* **Interactive Component-Driven UI:** Built with modular React components, custom responsive grids, and high-contrast editorial typography.
+* **Snappier Motion Systems:** Tuned Framer Motion entrance animations and scroll-tracking states for instantaneous, lag-free navigation.
+* **Seamless Sidebar & Section Flow:** Synchronized scroll-spy navigation keeping users oriented across all nine portfolio sections.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+* **Frontend:** React, Vite
+* **Motion:** Framer Motion
+* **Styling:** Tailwind CSS, Custom Editorial CSS
+* **Deployment & Hosting:** Git, GitHub, Vercel CI/CD
+
+## Project Structure
+
+```text
+sreethika-portfolio/
+├── src/
+│   ├── components/
+│   │   ├── SidebarNav.jsx      # Synchronized scroll-spy navigation
+│   │   ├── AnimatedSlide.jsx   # Optimized viewport entrance motion wrapper
+│   │   ├── AnimatedCard.jsx    # Individual card animation wrapper
+│   │   ├── Hero.jsx            # Introduction and primary CTAs
+│   │   ├── Projects.jsx        # Curated project showcase with technical hooks
+│   │   ├── Skills.jsx          # Contextual skill set display
+│   │   ├── About.jsx           # Background and identity
+│   │   ├── Journey.jsx         # Professional milestones and internships
+│   │   ├── Strengths.jsx       # Core problem-solving attributes
+│   │   ├── Achievements.jsx    # Certifications and recognitions
+│   │   ├── Beyond.jsx          # Personal interests beyond the desk
+│   │   ├── Goals.jsx           # Future technical objectives
+│   │   └── Contact.jsx         # Professional contact channels
+│   ├── App.jsx                 # Main layout structure and section ordering
+│   ├── index.css               # Global styling and editorial theme rules
+│   └── main.js / main.jsx      # React entry point
+├── package.json
+└── vite.config.js
+
+```
+
+## Local Setup
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Sr-2525/sreethika-portfolio.git
+cd sreethika-portfolio
+
+```
+
+
+2. Install dependencies:
+```bash
+npm install
+
+```
+
+
+3. Run the development server:
+```bash
+npm run dev
+
+```
+
+
+
+## Notes
+
+This portfolio is continuously refined to reflect current engineering milestones, clean component architecture, and modern full-stack competencies.
