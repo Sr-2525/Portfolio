@@ -29,8 +29,8 @@ function Contact() {
               </li>
               <li>
                 <strong style={{ color: '#D96B27' }}>GITHUB:</strong>{' '}
-                <a href="https://github.com/Sr-2525" target="_blank" rel="noreferrer" style={{ color: '#D96B27', textDecoration: 'underline' }}>
-                  github.com/Sr-2525
+                <a href="https://github.com/Sreethika-R" target="_blank" rel="noreferrer" style={{ color: '#D96B27', textDecoration: 'underline' }}>
+                  github.com/Sreethika-R
                 </a>
               </li>
               <li>
