@@ -10,6 +10,28 @@ function Projects() {
         <div className="editorial-card" style={{ marginBottom: '25px' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '10px' }}>
             <div>
+              <span style={{ fontSize: '0.8rem', color: '#D8B5E3', fontWeight: 600, textTransform: 'uppercase' }}>Interactive Frontend Engineering &amp; UI Design</span>
+              <h3 style={{ fontSize: '1.4rem', marginTop: '4px' }}>Personal Portfolio</h3>
+            </div>
+            <span style={{ fontSize: '0.85rem', color: '#EED7FF', fontWeight: 500 }}>Sep 2026</span>
+          </div>
+          <p style={{ fontSize: '0.9rem', color: '#EED7FF', fontStyle: 'italic', margin: '8px 0 12px 0' }}>React, Vite, Framer Motion, Tailwind CSS, Git/GitHub</p>
+          <p style={{ marginBottom: '14px', color: '#E8DFEC' }}>
+            Designed and built from scratch as a high-performance interactive developer portfolio to showcase technical architecture, professional milestones, and creative projects with a polished editorial aesthetic.
+          </p>
+          <ul className="square-list" style={{ fontSize: '0.95rem' }}>
+            <li>Architected a modular component-driven layout utilizing React and Vite for blazing-fast development and optimized production bundling</li>
+            <li>Engineered smooth motion systems, scroll tracking, and card animations using Framer Motion</li>
+            <li>Implemented fully responsive multi-section layouts with high-contrast editorial typography and state management</li>
+            <li>Configured complete CI/CD deployment pipelines via Git/GitHub and Vercel hosting</li>
+          </ul>
+        </div>
+      </AnimatedCard>
+
+      <AnimatedCard delay={0.2}>
+        <div className="editorial-card" style={{ marginBottom: '25px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '10px' }}>
+            <div>
               <span style={{ fontSize: '0.8rem', color: '#D8B5E3', fontWeight: 600, textTransform: 'uppercase' }}>AI-Driven Personal Safety Platform</span>
               <h3 style={{ fontSize: '1.4rem', marginTop: '4px' }}>SafePassage</h3>
             </div>
@@ -29,7 +51,7 @@ function Projects() {
       </AnimatedCard>
 
       <div className="grid-2">
-        <AnimatedCard delay={0.2}>
+        <AnimatedCard delay={0.3}>
           <div className="editorial-card">
             <span style={{ fontSize: '0.8rem', color: '#D8B5E3', fontWeight: 600, textTransform: 'uppercase' }}>Logistics Automation</span>
             <h3 style={{ fontSize: '1.25rem', marginTop: '4px' }}>Haritha Connect</h3>
@@ -42,7 +64,7 @@ function Projects() {
           </div>
         </AnimatedCard>
 
-        <AnimatedCard delay={0.3}>
+        <AnimatedCard delay={0.4}>
           <div className="editorial-card">
             <span style={{ fontSize: '0.8rem', color: '#D8B5E3', fontWeight: 600, textTransform: 'uppercase' }}>Transaction Management</span>
             <h3 style={{ fontSize: '1.25rem', marginTop: '4px' }}>Chai Book</h3>
@@ -56,7 +78,7 @@ function Projects() {
         </AnimatedCard>
       </div>
 
-      <AnimatedCard delay={0.4}>
+      <AnimatedCard delay={0.5}>
         <div className="editorial-card" style={{ marginTop: '20px' }}>
           <span style={{ fontSize: '0.8rem', color: '#D8B5E3', fontWeight: 600, textTransform: 'uppercase' }}>Scheduling Platform</span>
           <h3 style={{ fontSize: '1.25rem', marginTop: '4px' }}>Quick Serve</h3>

@@ -12,7 +12,7 @@ function Skills() {
             <h3>Languages &amp; Development</h3>
             <ul className="square-list">
               <li><strong>Languages:</strong> Python, PHP, Java, SQL, C, C++</li>
-              <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript</li>
+              <li><strong>Frontend:</strong> React, Vite, HTML5, CSS3, JavaScript, Tailwind CSS</li>
               <li><strong>Backend:</strong> Django, PHP, REST APIs</li>
               <li><strong>Databases:</strong> MySQL, MongoDB, SQLite, PostgreSQL (working knowledge)</li>
             </ul>
@@ -35,7 +35,7 @@ function Skills() {
           <div className="editorial-card">
             <h3>Tools &amp; Environment</h3>
             <ul className="square-list">
-              <li>Git, GitHub, VS Code, XAMPP</li>
+              <li>Git, GitHub, VS Code, XAMPP, Vercel (Deployment &amp; Hosting)</li>
               <li>AI-assisted coding tools integrated into development workflows</li>
             </ul>
           </div>
@@ -47,7 +47,7 @@ function Skills() {
             <ul className="square-list">
               <li>Agile/Scrum and sprint-based delivery</li>
               <li>Software Testing &amp; Debugging, Database Design, Technical Documentation, RBAC</li>
-              <li>Continuously exploring emerging AI tools and software engineering trends.</li>
+              <li>Continuously exploring emerging UI engineering trends and software architectures.</li>
             </ul>
           </div>
         </AnimatedCard>
