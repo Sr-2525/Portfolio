@@ -15,10 +15,30 @@ function Contact() {
             </p>
             <ul className="square-list" style={{ fontSize: '1rem', lineHeight: '1.8', margin: '0' }}>
               <li><strong style={{ color: '#D96B27' }}>NAME:</strong> Sreethika R</li>
-              <li><strong style={{ color: '#D96B27' }}>EMAIL:</strong> <a href="mailto:sreethikaradhakrishnan03@gmail.com" style={{ color: '#D96B27', textDecoration: 'none' }}>sreethikaradhakrishnan03@gmail.com</a></li>
-              <li><strong style={{ color: '#D96B27' }}>LINKEDIN:</strong> <a href="https://linkedin.com/in/sreethika-r" target="_blank" rel="noreferrer" style={{ color: '#D96B27', textDecoration: 'none' }}>linkedin.com/in/sreethika-r</a></li>
-              <li><strong style={{ color: '#D96B27' }}>GITHUB:</strong> <a href="https://github.com/sreethika-radhakrishnan" target="_blank" rel="noreferrer" style={{ color: '#D96B27', textDecoration: 'none' }}>github.com/sreethika-radhakrishnan</a></li>
-              <li><strong style={{ color: '#D96B27' }}>LOCATION:</strong> Palakkad, Kerala, India <span style={{ display: 'block', fontSize: '0.85rem', color: '#D96B27', fontStyle: 'italic', marginTop: '2px', textShadow: 'none' }}>(Ready to relocate as job demands for the right opportunity)</span></li>
+              <li>
+                <strong style={{ color: '#D96B27' }}>EMAIL:</strong>{' '}
+                <a href="mailto:sreethikaradhakrishnan03@gmail.com" style={{ color: '#D96B27', textDecoration: 'underline' }}>
+                  sreethikaradhakrishnan03@gmail.com
+                </a>
+              </li>
+              <li>
+                <strong style={{ color: '#D96B27' }}>LINKEDIN:</strong>{' '}
+                <a href="https://linkedin.com/in/sreethika-r" target="_blank" rel="noreferrer" style={{ color: '#D96B27', textDecoration: 'underline' }}>
+                  linkedin.com/in/sreethika-r
+                </a>
+              </li>
+              <li>
+                <strong style={{ color: '#D96B27' }}>GITHUB:</strong>{' '}
+                <a href="https://github.com/Sr-2525" target="_blank" rel="noreferrer" style={{ color: '#D96B27', textDecoration: 'underline' }}>
+                  github.com/Sr-2525
+                </a>
+              </li>
+              <li>
+                <strong style={{ color: '#D96B27' }}>LOCATION:</strong> Palakkad, Kerala, India{' '}
+                <span style={{ display: 'block', fontSize: '0.85rem', color: '#D96B27', fontStyle: 'italic', marginTop: '2px', textShadow: 'none' }}>
+                  (Ready to relocate as job demands for the right opportunity)
+                </span>
+              </li>
             </ul>
           </div>
         </AnimatedCard>
