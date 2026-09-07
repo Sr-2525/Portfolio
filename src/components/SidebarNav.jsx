@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react'
 
 const navItems = [
   { id: 'about', label: 'Who I Am' },
-  { id: 'journey', label: 'My Journey' },
-  { id: 'skills', label: 'My Skill Set' },
-  { id: 'strengths', label: 'My Strengths' },
   { id: 'projects', label: 'Recent Work' },
+  { id: 'skills', label: 'My Skill Set' },
+  { id: 'journey', label: 'My Journey' },
+  { id: 'strengths', label: 'My Strengths' },
   { id: 'achievements', label: 'Achievements' },
   { id: 'beyond', label: 'Beyond the Desk' },
   { id: 'goals', label: 'What\'s Next' },
@@ -20,7 +20,6 @@ function SidebarNav() {
       const aboutSection = document.getElementById('about')
       const scrollPosition = window.scrollY + 300
 
-      // If we haven't scrolled down to the 'about' section yet, clear the active nav state
       if (aboutSection && scrollPosition < aboutSection.offsetTop) {
         setActiveId(null)
         return

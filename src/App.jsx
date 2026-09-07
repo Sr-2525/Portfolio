@@ -18,10 +18,10 @@ function App() {
       <div className="portfolio-content">
         <div id="hero"><AnimatedSlide variant="scaleFade"><Hero /></AnimatedSlide></div>
         <div id="about"><AnimatedSlide variant="slideLeft"><About /></AnimatedSlide></div>
-        <div id="journey"><AnimatedSlide variant="fadeSlide"><Journey /></AnimatedSlide></div>
-        <div id="skills"><AnimatedSlide variant="blurFade"><Skills /></AnimatedSlide></div>
-        <div id="strengths"><AnimatedSlide variant="scaleFade"><Strengths /></AnimatedSlide></div>
         <div id="projects"><AnimatedSlide variant="slideLeft"><Projects /></AnimatedSlide></div>
+        <div id="skills"><AnimatedSlide variant="blurFade"><Skills /></AnimatedSlide></div>
+        <div id="journey"><AnimatedSlide variant="fadeSlide"><Journey /></AnimatedSlide></div>
+        <div id="strengths"><AnimatedSlide variant="scaleFade"><Strengths /></AnimatedSlide></div>
         <div id="achievements"><AnimatedSlide variant="fadeSlide"><Achievements /></AnimatedSlide></div>
         <div id="beyond"><AnimatedSlide variant="blurFade"><Beyond /></AnimatedSlide></div>
         <div id="goals"><AnimatedSlide variant="scaleFade"><Goals /></AnimatedSlide></div>
